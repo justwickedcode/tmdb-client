@@ -1,6 +1,6 @@
 {
   "name": "@justwicked/tmdb-client",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A lightweight TypeScript Client for the TMDB API.",
   "type": "module",
   "main": "./dist/index.js",
@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/justwickedcode/tmdb-api-wrapper.git"
+    "url": "https://github.com/justwickedcode/tmdb-client.git"
   },
   "keywords": [
     "tmdb",
@@ -36,10 +36,10 @@
   "author": "justwickedcode",
   "license": "MIT",
   "devDependencies": {
-    "dotenv": "^17.2.3",
-    "orval": "^7.17.0",
-    "prettier": "^3.6.2",
-    "rimraf": "^6.0.1",
-    "typescript": "^5.0.0"
+    "dotenv": "^17.3.1",
+    "orval": "^7.21.0",
+    "prettier": "^3.8.1",
+    "rimraf": "^6.1.2",
+    "typescript": "^5.9.3"
   }
 }

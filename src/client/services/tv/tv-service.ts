@@ -91,7 +91,7 @@ export default class TVService {
     return await tvSeriesScreenedTheatrically(seriesId, this.defaultOptions);
   }
 
-  public async getSimilar(seriesId: string, params?: TvSeriesSimilarParams) {
+  public async getSimilar(seriesId: number, params?: TvSeriesSimilarParams) {
     return await tvSeriesSimilar(seriesId, params, this.defaultOptions);
   }
 
@@ -112,12 +112,7 @@ export default class TVService {
     tvSeriesAddRatingBody: TvSeriesAddRatingBody,
     params?: TvSeriesAddRatingParams,
   ) {
-    return await tvSeriesAddRating(
-      seriesId,
-      tvSeriesAddRatingBody,
-      params,
-      this.defaultOptions,
-    );
+    return await tvSeriesAddRating(seriesId, tvSeriesAddRatingBody, params, this.defaultOptions);
   }
 
   public async deleteRating(seriesId: number, params?: TvSeriesDeleteRatingParams) {

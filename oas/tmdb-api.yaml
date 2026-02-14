@@ -36373,7 +36373,7 @@ paths:
         - name: series_id
           in: path
           schema:
-            type: string
+            type: integer
           required: true
         - name: language
           in: query
