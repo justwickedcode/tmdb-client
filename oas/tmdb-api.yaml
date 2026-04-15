@@ -29052,21 +29052,30 @@ paths:
       description: Get the trending movies, TV shows and people.
       operationId: trending-all
       parameters:
-        - name: time_window
-          in: path
-          schema:
-            type: string
-            enum:
-              - day
-              - week
-            default: day
-          required: true
-        - name: language
-          in: query
-          description: '`ISO-639-1`-`ISO-3166-1` code'
-          schema:
-            type: string
-            default: en-US
+      - name: time_window
+        in: path
+        schema:
+          type: string
+          enum:
+            - day
+            - week
+          default: day
+        required: true
+
+      - name: language
+        in: query
+        description: '`ISO-639-1`-`ISO-3166-1` code'
+        schema:
+          type: string
+          default: en-US
+
+      - name: page
+        in: query
+        description: Page number for pagination (default is 1)
+        schema:
+          type: integer
+          default: 1
+          minimum: 1
       responses:
         '200':
           description: '200'
@@ -29304,21 +29313,28 @@ paths:
       description: Get the trending movies on TMDB.
       operationId: trending-movies
       parameters:
-        - name: time_window
-          in: path
-          schema:
-            type: string
-            enum:
-              - day
-              - week
-            default: day
-          required: true
-        - name: language
-          in: query
-          description: '`ISO-639-1`-`ISO-3166-1` code'
-          schema:
-            type: string
-            default: en-US
+      - name: time_window
+        in: path
+        schema:
+          type: string
+          enum:
+            - day
+            - week
+          default: day
+        required: true
+      - name: language
+        in: query
+        description: '`ISO-639-1`-`ISO-3166-1` code'
+        schema:
+          type: string
+          default: en-US
+      - name: page
+        in: query
+        description: Page number for pagination (default is 1)
+        schema:
+          type: integer
+          default: 1
+          minimum: 1
       responses:
         '200':
           description: '200'
@@ -29559,21 +29575,30 @@ paths:
       description: Get the trending people on TMDB.
       operationId: trending-people
       parameters:
-        - name: time_window
-          in: path
-          schema:
-            type: string
-            enum:
-              - day
-              - week
-            default: day
-          required: true
-        - name: language
-          in: query
-          description: '`ISO-639-1`-`ISO-3166-1` code'
-          schema:
-            type: string
-            default: en-US
+      - name: time_window
+        in: path
+        schema:
+          type: string
+          enum:
+            - day
+            - week
+          default: day
+        required: true
+
+      - name: language
+        in: query
+        description: '`ISO-639-1`-`ISO-3166-1` code'
+        schema:
+          type: string
+          default: en-US
+
+      - name: page
+        in: query
+        description: Page number for pagination (default is 1)
+        schema:
+          type: integer
+          default: 1
+          minimum: 1
       responses:
         '200':
           description: '200'
@@ -30223,21 +30248,30 @@ paths:
       description: Get the trending TV shows on TMDB.
       operationId: trending-tv
       parameters:
-        - name: time_window
-          in: path
-          schema:
-            type: string
-            enum:
-              - day
-              - week
-            default: day
-          required: true
-        - name: language
-          in: query
-          description: '`ISO-639-1`-`ISO-3166-1` code'
-          schema:
-            type: string
-            default: en-US
+      - name: time_window
+        in: path
+        schema:
+          type: string
+          enum:
+            - day
+            - week
+          default: day
+        required: true
+
+      - name: language
+        in: query
+        description: '`ISO-639-1`-`ISO-3166-1` code'
+        schema:
+          type: string
+          default: en-US
+
+      - name: page
+        in: query
+        description: Page number for pagination (default is 1)
+        schema:
+          type: integer
+          default: 1
+          minimum: 1
       responses:
         '200':
           description: '200'
